@@ -1,0 +1,419 @@
+---
+title: "Big Data - Assignment 1"
+author:
+- name: Aditya Bhadoria
+  affiliation: J1719461
+  email: adityavsb@gmail.com
+  
+- name: Adrián Ramírez
+  affiliation: 47292486R
+  email: adrian.ramirez.rio@gmail.com
+  
+date: "8th October 2015"
+output: pdf_document
+---
+
+# Modeling the sinking of the RMS Titanic
+
+## Needed libraries
+```{r, label=libraries}
+library(caret)
+library(rpart)
+library(rpart.plot)
+library(randomForest)
+```
+
+## Cleaning the data and building train and test sets
+### Getting the data
+Read data and transform PassengerId, Survived, Pclass, SibSp and Parch to factor variables.
+```{r, label=load_data}
+passengers = read.csv("../data/titanic.csv", na.strings = "")
+passengers$PassengerId = as.factor(passengers$PassengerId)
+passengers$Survived = as.factor(passengers$Survived)
+passengers$Pclass = as.factor(passengers$Pclass)
+passengers$SibSp = as.factor(passengers$SibSp)
+passengers$Parch = as.factor(passengers$Parch)
+summary(passengers)
+```
+
+### Clean data
+#### **Question 1:** Which are the variables that are discarded and why?
+
+First we have to remove from the dataframe those variables that are not considered meaningful, i.e. literals, strings and ids ('PassengerId', 'Name' and 'Ticket').
+```{r, label=clean_data1}
+data = subset(passengers, select=-c(PassengerId, Name, Ticket))
+```
+
+Second, we must discard or impute (out of the scope) those patterns with missing values. For that purpose, we first look for missing values in each variable.
+```{r, label=clean_data2}
+sapply(data, function(x) sum(is.na(x)))
+```
+We find 3 variables with missing values: 'Age', 'Cabin' and 'Embarked'.
+The 'Cabin' variable has `r sum(is.na(data$Cabin))` missing values, which means that `r sum(is.na(data$Cabin))/nrow(data)*100`% of the passengers have no assigned Cabin. For this reason we consider this variable can also be discarded.
+```{r, label=clean_data3}
+data = subset(data, select=-c(Cabin))
+```
+With respect to the 'Age' variable, only `r sum(is.na(data$Age))/nrow(data)*100`% passengers don't have a value, so we can discard those passengers for the analysis getting still a dataset with `r nrow(data) - sum(is.na(data$Age))` patterns.
+```{r, label=clean_data4}
+data = na.omit(data)
+```
+We check again for missing values and see there aren't any now.
+```{r, label=clean_data5}
+sapply(data, function(x) sum(is.na(x)))
+```
+A summary of the resulting dataset is shown below
+```{r, label=clean_data6}
+summary(data)
+```
+
+## Create train and test datasets
+We will split the dataset into 80-20 % for train and test with respect to the target variable 'Survived', keeping the balance between number of patterns from positive and negative classes (this feature is provided by the createDataPartition function).
+```{r}
+#Set seed for random numbers to build always the same datasets (to ease interpretation)
+set.seed(123)
+train.idx = createDataPartition(data$Survived, p=0.8, list=FALSE)
+trainData = data[train.idx,]
+trainData.predictors = subset(trainData, select=-c(Survived))
+trainData.target = trainData$Survived
+testData = data[-train.idx,]
+testData.predictors = subset(testData, select=-c(Survived))
+testData.target = testData$Survived
+```
+We hence get a train dataset with `r nrow(trainData)` patterns and a test dataset with `r nrow(testData)` patterns.
+Additionally two variables are created for each of these two datasets, one that contains the predictor variables and one that contains the targets (this will make code clearer in the rest of the assignment).
+
+## Training	a	single decision tree
+We will now proceed to train a decision tree (CART algorithm) using the train dataset.
+```{r}
+defaultTree = rpart(Survived ~ ., trainData)
+```
+
+####**Question 2:**	Plot the tree with the prp() function. Which are the most important variables according to the tree? Does the tree change if we rerun the rpart() function? Why?
+
+```{r}
+prp(defaultTree, extra=1)
+```
+
+As we can see in the plot, the most important variable (first one selected to split) is the 'Sex' of the passenger, followed by the 'Age' and the passenger's class ('Pclass'). 'Fare' and 'SibSp' are also important somehow, since they are present in the tree decision making. The variables that are not present ('Parch' and 'Embarked') are not considered important by the model.
+Now we rerun the rpart function
+
+```{r}
+tree.rerun = rpart(Survived ~ ., trainData)
+prp(tree.rerun, extra=1)
+```
+
+and see the tree hasn't changed at all. This is because the CART algorithm is completely deterministic, in other words, there is not any kind of randomness in the form the tree is constructed from the data, so provided the same data and parameter values, the constructed decision tree will always be the same.
+
+#### **Question	3:** Which are	the performance values (accuracy, sensitivity, specificity, etc.) of the learned model on the testing subset?
+
+To see the accuracy of the model in the test data, we use the method predict and then we build the confusion matrix, where we find the desired performance values.
+```{r}
+defaultCM = confusionMatrix(predict(defaultTree, newdata=testData, type="class"), testData.target)
+defaultCM
+```
+
+#### **Question 4:** Which are the values for the parameters of this algorithm (minbucket, minsplit, complexity parameter, cost, etc.)?
+
+We check the rpart function documentation.
+```{r}
+?rpart
+```
+And we find that the parameters of the model are specified in the control and cost arguments. For the cost, the default value is a vector of ones of length the number of variables:
+
+> cost	
+a vector of non-negative costs, one for each variable in the model. Defaults to one for all variables. These are scalings to be applied when considering splits, so the improvement on splitting on a variable is divided by its cost in deciding which split to choose.
+
+For the control argument, the default values are those in the rpart.control
+```{r}
+?rpart.control
+```
+And we find the default values to be:
+
+> rpart.control(minsplit = 20, minbucket = round(minsplit/3), cp = 0.01, 
+              maxcompete = 4, maxsurrogate = 5, usesurrogate = 2, xval = 10,
+              surrogatestyle = 0, maxdepth = 30, ...)
+
+#### **Question 5:** Try different combinations of values for some of the parameters (decreasing minsplit, minbucket, cp and cost values, for example) and check the performance of each combination on the testing subset. How does this performance change? How do the obtained trees change? Is there any relationship between the parameters values and the shape of the trees?
+
+To measure the change in performance by the different trees built for the different parameter values, we will focus on the Accuracy metric performance.
+The baseline confusion matrix, that allows us to check changes in performance, is the one shown below (with it's corresponding accuracy).
+```{r}
+defaultCM$table
+defaultCM$overall[1]
+```
+
+**1.** minsplit = 5 (while maintaining minbucket=7 which is the default value):
+``` {r}
+tunedTree = rpart(Survived ~ ., trainData, control=rpart.control(minsplit=5, minbucket=7))
+prp(tunedTree, extra=1)
+tunedCM = confusionMatrix(predict(tunedTree, newdata=testData, type="class"), testData.target)
+tunedCM$table
+tunedCM$overall[1]
+```
+The built tree hasn't changed so it's performance (see the confusion matrix above) hasn't changed either. 
+
+**2.** cp = 0.001:
+``` {r}
+tunedTree = rpart(Survived ~ ., trainData, control=rpart.control(cp=0.001))
+prp(tunedTree, extra=1)
+tunedCM = confusionMatrix(predict(tunedTree, newdata=testData, type="class"), testData.target)
+```  
+Now the tree shape is partially different. This tree is an evolution of the previous one. Conditions have not changed but the tree has grown deeper (it makes sense since the cp parameter is used for pre-prunning). 
+
+Change in performance:
+```{r}
+tunedCM$table
+tunedCM$overall[1]
+```
+False-positive cases grow while false-negative ones hold and hence performance falls, as we see, for example, in the accuracy.
+
+**3.** minbucket = 6 (while maintaining minsplit=20):
+``` {r}
+tunedTree = rpart(Survived ~ ., trainData, control=rpart.control(minsplit=20, minbucket=6))
+prp(tunedTree, extra=1)
+tunedCM = confusionMatrix(predict(tunedTree, newdata=testData, type="class"), testData.target)
+```  
+There is a change in its shape in the right branch, where after splitting by the condition 'Fare>=21' then we check the condition 'Age>=36' rather than 'Age>=16' (as happened in the previous case). 
+This happens because the condition 'Age>=16' gives as result a leaf node with 6 patterns, that previously was discarded because minbucket was 7 (>=6).
+
+Change in performance:
+```{r}
+tunedCM$table
+tunedCM$overall[1]
+```
+While there are two more false-positives there is one less false-negative so the overall accuracy falls just a bit.
+
+**4.** cost = 100 for variable Sex (2nd component):  
+This should make the algorithm prefer to split by any variable rather than Sex.
+``` {r}
+tunedTree = rpart(Survived ~ ., trainData, cost=c(1,100,1,1,1,1,1))
+prp(tunedTree, extra=1)
+tunedCM = confusionMatrix(predict(tunedTree, newdata=testData, type="class"), testData.target)
+```  
+As we see the tree has totally changed since the Sex variable is no longer used to build the tree. 
+
+Change in performance:
+```{r}
+tunedCM$table
+tunedCM$overall[1]
+```
+Both false-positive and false-negatives raise, hence the accuracy drops down.
+
+**5.** minsplit=0, minbucket=0, cp=0:  
+With these values we intend to build the full tree, this is, the tree where each node is pure (only patterns from one class). This might not be achievable because the maximum depth that the algorithm allows us to set is 30, but still we can get a pretty big tree.
+```{r}
+tunedTree = rpart(Survived ~ ., trainData, control=rpart.control(minsplit=0, minbucket=0, cp=0))
+prp(tunedTree, extra=1)
+tunedCM = confusionMatrix(predict(tunedTree, newdata=testData, type="class"), testData.target)
+```
+This kind of trees will normally overfit to the training data, since they specialize too much in the examples we show them. 
+
+Change in performance:
+```{r}
+tunedCM$table
+tunedCM$overall[1]
+```
+We can notice the tree is overfitting since its performance is even worse that the one from the previous case.
+
+**6.** minsplit=50, minbucket=50, cp=0.1:  
+Contrarily to letting the tree grow, with these values we will try to get a really simple tree, this is, a tree with only two terminal nodes.
+``` {r}
+tunedTree = rpart(Survived ~ ., trainData, control=rpart.control(minsplit=50, minbucket=50, cp=0.1))
+prp(tunedTree, extra=1)
+tunedCM = confusionMatrix(predict(tunedTree, newdata=testData, type="class"), testData.target)
+```
+What we expect with these simple trees is to suffer some kind of underfitting, in other words, a lack of capability from the model to explain the data.
+
+Change in performance:
+```{r}
+tunedCM$table
+tunedCM$overall[1]
+```
+Again, we confirm that the tree is underfitting since it's performance is again a lot worse than previous studied trees.
+  
+## Automatically tuning the parameters of a decision tree
+For automatically tuning the parameters in the tree we use the train function from caret package. We select the method rpartCost that will try to fit the values for the complexity parameter (cp) and the cost.
+```{r}
+fitControl = trainControl(method="cv", number=10, search="grid")
+treeFit = train(x=trainData.predictors, y=trainData.target, method="rpartCost", trControl=fitControl)
+```
+We have found what we believe could be a bug. When calling the train function with the configuration shown above (where by default tuneLength is 3), the function seems to be performing a random search for the parameter values, as only 3 points in the parameter space are being validated
+```{r}
+treeFit$results
+```
+and no grid structure is found in the values of the complexity parameter.
+```{r}
+plot(treeFit)
+```
+
+A workaround for it seems to be setting tuneLength>=10, so we will use this value from now on (except when the grid structure is actually passed to the train function).
+```{r}
+treeFit = train(x=trainData.predictors, y=trainData.target, method="rpartCost", trControl=fitControl, tuneLength=10)
+```
+
+#### **Question 6:** Which are the combinations of parameters values tested by the train() function? Are there any changes in the performance of the algorithm when different combinations of values are used (according to the results of the cross validation)?
+
+We can see the combinations tested by the model below (sorted by Accuracy from higher to lower, and only showing top 5 and bottom 5).
+```{r}
+head(treeFit$results[order(treeFit$results$Accuracy, decreasing=TRUE), ], 5)
+tail(treeFit$results[order(treeFit$results$Accuracy, decreasing=TRUE), ], 5)
+```
+Clearly, the performance of the model (check the Accuracy and Kappa metrics) is different depending on which values are used to train the model. We see this for example looking at the first and last models, where the Accuracy falls from `r treeFit$results[order(treeFit$results$Accuracy, decreasing=TRUE), ]$Accuracy[1]` to `r treeFit$results[order(treeFit$results$Accuracy, decreasing=FALSE), ]$Accuracy[1]`
+ 
+#### **Question	7:** Which is the final combination of parameters values used? Which is the shape of the tree trained with this automatic tuning function?
+
+We can check the selected parameters and plot the final model
+```{r}
+treeFit$bestTune
+prp(treeFit$finalModel, extra=1)
+```
+
+As we see this is a very simple model where only 2 of the 7 predictive variables are considered.
+  
+### **Question 8:** Plot the result of calling the train() function with the plot() function. What does this plot represent?
+
+```{r}
+plot(treeFit)
+``` 
+
+This plot represents the accuracy of the different models used in validation in function of the different values tried for the parameters. As we see the combination chosen by the method as the best (or final) model lies on the top of the plot although it is not the highest one. This is because for the best model selection the function train() not only takes into account the accuracy metric but also other performance metrics.
+  
+
+Now we will rerun the train function with a different set of possible values for the parameters (that we will choose).
+```{r}
+rpartGrid = expand.grid(.Cost = c(1, 2, 3, 5, 10), .cp=c(0, 0.01, 0.02, 0.04, 0.07, 0.10))
+treeFit = train(x=trainData.predictors, y=trainData.target, method="rpartCost", 
+                trControl=fitControl, tuneGrid=rpartGrid)
+```
+
+#### **Question 9:** Which are the combinations of parameters values tested by the train() function? Are there any changes in the performance of the algorithm when different combinations of values are used (according to the results of the cross validation)?
+
+Again, since we are trying different values for the parameters, the (some) built trees will be different and hence we will find different performances for different parameter combinations. Below we can see the list of the different combinations ordered by accuracy.
+```{r}
+treeFit$results[order(treeFit$results$Accuracy, decreasing=TRUE), ]
+```
+
+#### **Question 10:** Which is the final combination of parameters values used? Which is the shape of the tree trained with this automatic tuning function?
+
+As before we can ask for the parameters of the model best tuned and plot it.
+```{r}
+treeFit$bestTune
+bestTree = treeFit$finalModel
+prp(bestTree, extra=1)
+```
+
+Now the obtained tree is totally different; as can be seen in the plot it is a lot more complex, although some of the conditions at the top remain the same.
+
+#### **Question 11:** Plot the result of calling the train() function with the plot() function. What does this plot represent?
+
+```{r}
+plot(treeFit)
+```
+
+Again this plot shows the Accuracy obtained during cross-validation for the different parameter combinations. As we can see the points represent the combinations of the values we have chosen for the parameters.
+
+## Training a Random Forest (with default and custom parameters values)
+First, we train a random forest with the default parameter values and 2000 trees.
+`r set.seed(0)`
+```{r}
+rfFit= train(x=trainData.predictors, y=trainData.target, method="rf", trControl=fitControl, ntree=2000)
+```
+#### **Question 12:** Which are the combinations of parameters values tested by the train() function? Are there any changes in the performance of the algorithm when different combinations of values are used (according to the results of the cross validation)?
+
+As in the previous section the validated models are shown below, ordered by accuracy.
+```{r}
+rfFit$results[order(rfFit$results$Accuracy, decreasing=TRUE), ]
+```
+One more time we find that the performance of the model changes when different values for the parameter mtry are chosen.
+
+#### **Question 13:** Which is the final combination of parameters values used?
+
+The chosen value for the mtry parameter is 
+```{r}
+rfFit$bestTune
+```
+Note that here there is no combination, since only one parameter is being tuned.
+  
+#### **Question 14:** Plot the result of calling the train() function with the plot() function. What does this plot represent?
+
+```{r}
+plot(rfFit)
+```
+
+What we see in the plot is the accuracy achieved by the different models with respect to the selected value for the parameter mtry (randomly selected predictors).
+  
+#### **Question 15:** Plot the importance of each variable for the model with function VarImPlot() from package caret. Which are the most relevant variables according to their mean decrease of the Gini index? Are these variables the ones selected when we built our decision trees?
+
+```{r}
+varImpPlot(rfFit$finalModel)
+importance(rfFit$finalModel)[order(importance(rfFit$finalModel), decreasing=TRUE),]
+```
+As we can see, according to the Gini index decreasing the 3 most important variables are Sex(Male), Fare and Age. This differs (a little) from those variables important in the tree construction since Pclass was considered more important than Fare.
+We also observe that seems to be 4 "clusters" of variable (maybe 3 depending on interpretation):
+
+1. Sex as the most important one, with a lot of difference.
+2. Fare and Age as the next important ones.
+3. Pclass which may be important or may not.
+4. SibSp, Parch and Embarked as not important variables.
+
+
+Now we proceed to train the random forest with a preselected values for the mtry parameter.
+`r set.seed(1)`
+```{r}
+rfGrid = expand.grid(.mtry=c(1, 2, 3, 4, 5, 6, 7))
+rfFit= train(x=trainData.predictors, y=trainData.target, method="rf", trControl=fitControl, ntree=2000, tuneGrid=rfGrid)
+```
+
+#### **Question 16:** Which are the combinations of parameters values tested by the train() function? Are there any changes in the performance of the algorithm when different combinations of values are used (according to the results of the cross validation)?
+
+Using the same code as before.
+```{r}
+rfFit$bestTune
+rfFit$results[order(rfFit$results$Accuracy, decreasing=TRUE), ]
+```
+	
+  
+#### **Question 17:** Which is the final combination of parameters values used?
+
+The chosen value for the mtry parameter is 
+```{r}
+rfFit$bestTune
+bestRf = rfFit$finalModel
+```
+Note that here there is no combination, since only one parameter is being tuned.
+
+#### **Question 18:** Plot the result of calling the train() function with the plot() function. What does this plot represent?
+
+```{r}
+plot(rfFit)
+```
+
+#### **Question 19:** Plot the importance of each variable for the model with function VarImPlot() from package caret. Which are the most relevant variables according to their mean decrease of the Gini index? Are these variables the ones selected when we built our decision trees?
+
+```{r}
+varImpPlot(rfFit$finalModel)
+importance(rfFit$finalModel)[order(importance(rfFit$finalModel), decreasing=TRUE),]
+```
+As before, the more relevant variables are Sex, Fare and Age, but what we find now is that the variable clusters are a bit clearer and that distance between important variables and non-important has increased.
+
+#### **Question 20:** Which is the difference in performance with regards to the testing subset between the best decision tree model and the best random forest model?
+
+The results for the best Decision Tree found with automatic parameter fitting:
+```{r}
+confusionMatrix(predict(bestTree, newdata=testData, type="class"), testData.target)
+```
+Although the parameters have been automatically fitted, the default decision tree achieved better results than this one.
+```{r}
+confusionMatrix(predict(defaultTree, newdata=testData, type="class"), testData.target)
+```
+
+The results for the best Random Forest:
+```{r}
+confusionMatrix(predict(bestRf, newdata=testData, type="class"), testData.target)
+```
+We conclude that we have improved performance with respect to the decision trees. Also a curious observation is that almost all of the created models are more prone to false-negatives than fals-potives so this might be a property of the studied problem.
+
+## Conclusions
+As it was expected, the **random forests** model (with automatically tuned parameters) achieves **better generalization** results (better performance in test dataset) since what it is doing is "averaging" (actually bagging) the predictions made by 2000 independent trees. This better generalization comes from the **reduction in variance**, since the decision trees are weak learners (more prone to overfitting, that suffer from high variance) and the ensembles approach is based on reducing this variance while maintaining the bias, so that the generalization error also drops.
+
+As a **drawback**, it must be mentioned that random forests **training time is much higher** than that for decision trees (obviously this depends on the number of trained trees, but for 2000 it is noticeable). This can be **solved by parallelizing** the tree's training, so, when this is an option, random forests are a really good modelling option for classification tasks.
