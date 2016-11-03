@@ -1,0 +1,503 @@
+"","ID","Name","Stars","Longitude","Latitude","City","State","Reviews","Address","Breakfast","Lunch","Dinner","Dessert","TakeOut"
+"1","8buIr1zBCO7OEcAQSZko7w","Firefly",4.5,-115.1546953,36.1185522,"Las Vegas","NV",1352,"3900 Paradise Rd
+Eastside
+Las Vegas, NV 89169","False","False","True","False","True"
+"2","25JT5gNeZ782lP1cHTbKFg","Modern Burger",3.5,-112.0069893,33.4354634,"Phoenix","AZ",96,"3400 E Sky Harbor Blvd
+Phoenix, AZ 85034","False","True","False","False","True"
+"3","VEgWDEC0JY7gucB_xtOCRA","Klondike Resto-bar Grill & Supper Club",2,-73.9517452,45.4034295,"Sainte-Anne-de-Bellevue","QC",9,"100 Rue Sainte Anne
+Sainte-Anne-de-Bellevue, QC H9X 1N1","False","True","False","False","True"
+"4","HsRPbMlpFNOlIQHSqF1X0A","Crêperie Bretonne Ty-Breiz",3.5,-73.5750279,45.5250965,"Montréal","QC",12,"933 Rue Rachel E
+Montréal, QC H2J 2J2","False","False","False","False","True"
+"5","IOWc8aOdw3ej9uYnu2TDGw","Trattoria Trestevere",4.5,-73.5749378,45.4969853,"Montreal","QC",4,"1237 Crescent Rue
+Montreal, QC H3G 2B1","False","False","True","False",""
+"6","pAu8UuWTLTLai61TW8-tZw","Pei Wei",3.5,-112.3643087,33.6385585,"Surprise","AZ",50,"14155 W Bell Rd. Suite 113
+Surprise, AZ 85374","False","True","False","False","True"
+"7","sCv1wUWJhFmQEMw3A4lwXQ","Wong's Restaurant",4,-112.287703,33.4942832,"Phoenix","AZ",48,"10540 W Indian School Rd
+Phoenix, AZ 85037","False","True","False","False","True"
+"8","0InQd9vuhRc98OksC3Ks8Q","Buffet Roundtable",2,-115.17564062,36.0988783486,"Las Vegas","NV",187,"Excalibur Hotel Casino
+3850 Las Vegas Blvd S
+The Strip
+Las Vegas, NV 89109","True","False","True","False","False"
+"9","rGvkljWlP7ysvLEUucoyqA","Zaytoon Mediterranean Market and Kabob",4.5,-115.279439,36.1238755,"Las Vegas","NV",156,"3655 S Durango Dr
+Ste 11-14
+Spring Valley
+Las Vegas, NV 89147","False","True","False","False","True"
+"10","r-8wS4RTfRJtWM0DvdaCtQ","Peter Piper Pizza",3.5,-112.0823702,33.4884218,"Phoenix","AZ",11,"3403 N 7th Ave
+Phoenix, AZ 85013","False","True","False","False","True"
+"11","qf5lzhvdMcdVkuow7dnO3w","Osaka Japanese Bistro",3.5,-115.100421,35.994108,"Henderson","NV",110,"10920 S Eastern Ave
+Anthem
+Henderson, NV 89052","False","False","False","False","True"
+"12","5dUDkaxm5FdQanoNkP86KQ","Suruchi Resturant",4,-3.18562856191,55.9468255876,"Edinburgh","MLN",18,"14a Nicolson Street
+Newington
+Edinburgh EH8 9DH","False","False","True","False","True"
+"13","AYeeWujHF-va8vJME8Qxgg","Zoës Kitchen",3.5,-80.834647,35.212913,"Charlotte","NC",88,"1055 Metropolitan Ave
+Ste 110
+Myers Park
+Charlotte, NC 28204","False","True","False","False","True"
+"14","Nf2Vj8R6So6_jeX-YhAdJA","Coyote's Cafe & Cantina",3.5,-115.078507,36.071441,"Henderson","NV",84,"4350 E Sunset Road
+Henderson, NV 89014","False","True","True","False","True"
+"15","V49TGT1rEp0SIytUFEJctw","Grange Vin et Bouffe",3.5,-73.5557017,45.4995671,"Montréal","QC",21,"120 Rue McGill
+Montréal, QC H2Y 2E5","False","False","False","False","False"
+"16","51my4foYR2Xs1stK5idzyQ","Dairy Queen",2,-115.2822117,36.3027192,"Las Vegas","NV",22,"7785 N Durango Dr
+Ste 100
+Centennial
+Las Vegas, NV 89131","","","","","True"
+"17","aRaeSj5VgiNx78qHuGGNNA","Crêpe Cellar",4,-80.805909,35.246722,"Charlotte","NC",198,"3116 N Davidson St
+NoDa
+Charlotte, NC 28205","False","True","True","False","True"
+"18","R_D1Yg54sRfkGWxgFkel2Q","Cracker Barrel Old Country Store",3.5,-80.717679,35.13811,"Charlotte","NC",30,"9330 E Independence Blvd
+Charlotte, NC 28105","True","False","False","False","True"
+"19","DAIBZ-I6i5wEUsxEolzXBA","Chick-fil-A",4.5,-112.232676,33.635898,"Peoria","AZ",65,"16657 N 83rd Ave
+Peoria, AZ 85382","True","True","True","False","True"
+"20","ZFxUzyUMq7FQTewgDGO9IA","Apollo Restaurant",2.5,-73.5706515,45.50375,"Montréal","QC",7,"1333 University
+Montréal, QC H3A 1T9","","","","",""
+"21","zp713qNhx8d9KCJJnrw1xA","La Santisima Gourmet Taco Shop",4.5,-112.047393,33.469201,"Phoenix","AZ",603,"1919 N 16th St
+Phoenix, AZ 85006","False","True","False","False","True"
+"22","LxxmtHFNZ5S-MyhykoE4Sg","Wendy's",4,-115.2896481,36.1595332,"Las Vegas","NV",18,"8900 W Charleston Blvd
+Westside
+Las Vegas, NV 89117","False","False","False","True","True"
+"23","x_S72g72or0n_B8XeznS3A","Shane's Rib Shack",3,-111.964138,33.317906,"Chandler","AZ",5,"7131 W Ray Rd
+Chandler, AZ 85226","False","True","False","False","True"
+"24","R-aDr2HjBAHR3FoL2Dtd5Q","Sonic Drive-In",3.5,-111.8444611,33.3937162,"Mesa","AZ",12,"618 W Southern Ave
+Mesa, AZ 85210","True","True","False","True","True"
+"25","cWgPXQCUe_nu7bqQ9nl7hA","Popeyes",3.5,-115.2510793,36.2393882,"Las Vegas","NV",18,"7181 W Craig Rd
+Northwest
+Las Vegas, NV 89129","False","False","False","False","True"
+"26","n18yM8ba7fF6MajqejxLJA","Pho Bang New York",3.5,-73.5593259,45.5079111,"Montreal","QC",93,"1001 Boulevard Saint-Laurent
+Montreal, QC H2Z 1J4","False","True","True","False","True"
+"27","pHBQ-dQRwN3z7Rq7iSog-A","Pizza Hut",1.5,-89.299749,43.084614,"Madison","WI",6,"4762 Cottage Grove Rd
+Rolling Meadows
+Madison, WI 53716","","","","","True"
+"28","42SfghMoEXF-EYki2mrn8w","Thai Pepper Restaurant",3.5,-115.1552346,36.1446039,"Las Vegas","NV",79,"2226 Paradise Rd
+The Strip
+Las Vegas, NV 89104","False","False","True","False","True"
+"29","t719u5GZY0yPX4U7t5whrg","McAlister's Deli",3.5,-80.824258,35.116099,"Charlotte","NC",6,"4130 Carmel Road
+Charlotte, NC 28226","False","True","False","False","True"
+"30","cmtEIXBh4OopFgRrd9tomw","Pizza Hut",3.5,-112.0154694,33.3048059,"Phoenix","AZ",3,"3145 E Chandler Blvd
+Phoenix, AZ 85048","","","","","True"
+"31","Fu-ske3UIS_d8w3A2gwE1Q","Casa Mia",4,-111.7868921,33.5911573,"Scottsdale","AZ",8,"11485 N 136th St
+Scottsdale, AZ 85259","","","","","True"
+"32","67gi179fNUkU5sApNTcrMg","Peppersauce Cafe",4,-111.996111,33.412592,"Phoenix","AZ",55,"3937 E Anne St
+Phoenix, AZ 85040","False","True","False","False","True"
+"33","TgxDGx7L_JICWbuBUCGVqw","Fajitas A Sizzlin Celebration",3.5,-112.1162617,33.5764031,"Phoenix","AZ",144,"9841 N Black Canyon Hwy
+Phoenix, AZ 85021","False","True","True","False","True"
+"34","PZHO5bdgz26ddon8sV02AQ","Pizza Hut",3,-112.2017527,33.6706186,"Glendale","AZ",6,"20229 N 67th Ave
+C-10
+Glendale, AZ 85308","False","False","False","False","True"
+"35","fIgdMuoK7msC_68arzVV8w","Sweet Basil and La Filipiniana",5,-79.951942,40.482705,"Pittsburgh","PA",4,"5321 Butler St
+Lawrenceville
+Pittsburgh, PA 15201","False","False","False","False","False"
+"36","IT4_iHuLkHBVl8gcKvL5qw","Casa do José",4.5,8.4069024,49.005811,"Karlsruhe","BW",5,"Kriegsstraße 92
+76133 Karlsruhe","False","False","False","False","False"
+"37","2ReHBO99CCJjzVqto9Mfkw","Euro-Deli Batory",5,-73.600227,45.5244244,"Montreal","QC",9,"115, Rue Saint-Viateur Ouest
+Montreal, QC H2T 2L2","False","True","False","False","True"
+"38","u0Z0OwRYbwknE5Pr_CJhnw","China One",3.5,-115.285732,36.289679,"Las Vegas","NV",91,"7080 N Durango Dr
+Ste 130
+Centennial
+Las Vegas, NV 89149","False","True","True","False","True"
+"39","EUqCIk70-jb8BKKKfP2wQA","M sur Masson",4.5,-73.5749549,45.5478165,"Montreal","QC",12,"2876 rue Masson
+Montreal, QC H1Y 1W9","False","False","False","False","False"
+"40","KmrWIaomwSgQm6uWPNt3oA","Foxcroft Wine Co",4,-80.809042,35.1474555,"Charlotte","NC",27,"7824 Fairview Rd
+South Park
+Charlotte, NC 28226","False","False","True","False","False"
+"41","VzoxQsAAnpWXm5TSAHZnbw","Q's Diner",3.5,-80.734594,35.137223,"Charlotte","NC",10,"1816 Galleria Blvd
+Ste D
+Charlotte, NC 28270","True","True","True","False","True"
+"42","85mj0eX_C2wKCSSaqO1w4Q","Axxio Pizza",2.5,-111.924088,33.424281,"Tempe","AZ",16,"2000 E Rio Salado Pkwy
+Tempe, AZ 85281","False","True","False","False","True"
+"43","44LXMxCJo1tqmCpVq_cwbQ","Benjarong Authentic Thai Cuisine",3.5,-115.2795528,36.0533813,"Las Vegas","NV",99,"7425 S Durango Dr
+Ste 101
+Southwest
+Las Vegas, NV 89113","False","True","True","False","True"
+"44","dT_epUexjLh7s7fTCy_cNw","Stone Pepper's Grill Bar",3,-80.051104,40.352496,"Pittsburgh","PA",18,"1614 Washington Rd
+Pittsburgh, PA 15241","False","False","True","False","True"
+"45","4VqkjcY6OUJt7atNyv-1xw","Sing Thai",4.5,-3.20643822861,55.9578392754,"Edinburgh","EDH",4,"42 St Stephen Street
+Stockbridge
+Edinburgh EH3 5AL","False","False","False","False","True"
+"46","0jkZZRywo3wlmZcuCFbSEg","Macayo Vegas",3.5,-115.1272238,36.158865,"Las Vegas","NV",24,"1741 E Charleston Blvd
+Downtown
+Las Vegas, NV 89104","False","True","False","False","True"
+"47","RbThUOAzsx7am1xaft29zg","Antonio's Pizza",4,-88.229611,40.110082,"Champaign","IL",57,"619 E Green St
+Champaign, IL 61820","False","True","False","False","True"
+"48","6mq0k7vDZtlBjghMaEMbHw","Pizza Hut",2,-115.1084585,36.1305272,"Las Vegas","NV",6,"3050 E. Desert Inn Road, #101
+Eastside
+Las Vegas, NV 89121","False","False","False","False","True"
+"49","qyNtVViurIcChc35mfYIEw","Touch of Thai",3.5,-112.1366725,33.6390629,"Phoenix","AZ",152,"16816 N 35th Ave
+Phoenix, AZ 85053","False","True","False","False","True"
+"50","aU_UJVJUzX3gQpeIirsd0w","Atlanta Bread Company",2.5,-115.3114728,36.1589122,"Las Vegas","NV",3,"9785 W Charleston Blvd
+Westside
+Las Vegas, NV 89117","False","False","False","False",""
+"51","Klkzp8MC1qSKZDkTLYkcQA","Quiznos",3.5,-115.2489614,36.2617919,"Las Vegas","NV",7,"7135 W Ann Rd
+Northwest
+Las Vegas, NV 89130","False","False","False","False","True"
+"52","pUHxbf2_Dz9ky76PJRuf-g","La Fornarina",3.5,-73.6138458,45.5327193,"Montreal","QC",9,"6825 Saint-Laurent Boulevard
+Montreal, QC H2S 3C8","","","","",""
+"53","NNRUSPcXr3lGpcaaA3-Epw","Little Caesars Pizza",3,-111.7543818,33.3951596,"Mesa","AZ",5,"3544 E Southern Ave
+Mesa, AZ 85204","","","","","True"
+"54","FNZqovk1ZWI_z2YHw3b95w","Mylynn Cafe",2.5,-111.875779,33.413158,"Mesa","AZ",5,"66 S. Dobson Rd. Ste-106
+Mesa, AZ 85202","False","False","False","False","True"
+"55","yHvbgbZvLpwjzzeBPWDZAQ","Hon Machi Grill",3,-111.8582442,33.2638524,"Chandler","AZ",3,"2975 S Alma School Rd
+Ste 1
+Chandler, AZ 85224","False","False","False","False","True"
+"56","7Q19H5nM3oFRyCg_j0QV1A","Arizona Wilderness Brewing Co",4,-111.841114,33.363016,"Gilbert","AZ",269,"721 N Arizona Ave
+Ste 103
+Gilbert, AZ 85233","False","True","False","False","True"
+"57","JW6fDZOuUKtJyZGeldh0xA","Chestnut Lane",4,-111.9885861,33.5092093,"Phoenix","AZ",20,"4225 E Camelback Rd
+Phoenix, AZ 85018","True","True","False","False","True"
+"58","c35VyrGF38BHVjtMxA-zHw","Del Taco",3.5,-115.2231986,36.0996345,"Las Vegas","NV",16,"5955 W Tropicana Ave
+Las Vegas, NV 89103","False","True","False","False","True"
+"59","_naNO-mZQjTav4iLf5TFmA","Chicken King",3.5,-80.79768,35.295969,"Charlotte","NC",4,"2400 W Sugar Creek Rd
+Ste A
+Derita
+Charlotte, NC 28262","False","False","False","False","True"
+"60","nQK95GJD_KB-bc_g14bD9g","Mermaid Cafe",4,-89.3558596,43.091172,"Madison","WI",35,"1929 Winnebago St
+Schenk - Atwood
+Madison, WI 53704","True","False","False","False","True"
+"61","5-X03Zc0nN7U5eoe8uFUdw","Coronado Cafe",4,-112.0650649,33.4712477,"Phoenix","AZ",174,"2201 N 7th St
+Phoenix, AZ 85006","False","True","True","False","True"
+"62","8nRXiNdt_8-aePTlVxKqmA","El Paso BBQ",3.5,-111.9021,33.5706,"Scottsdale","AZ",8,"8220 N Hayden Rd
+# 112
+Scottsdale, AZ 85258","False","False","True","False","True"
+"63","oZRp4tgNT1jORygRKOKXJA","Institut de tourisme et d'hôtellerie du Québec",4,-73.5688137,45.5177096,"Montreal","QC",13,"3535, rue Saint-Denis
+Montreal, QC H2X 3P1","False","False","True","False","False"
+"64","AD01Y718Orj_vsPQDYXiQg","East Valley Cafe",4,-111.6995673,33.4157036,"Mesa","AZ",25,"6102 E Main St
+Mesa, AZ 85205","True","False","False","False","True"
+"65","V13d_rSDbaXE_Q3O2uaBIw","Bubbles' Doubles",3.5,-89.3851266082,43.0757844513,"Madison","WI",3,"2 East Mifflin St
+Capitol
+Madison, WI 53703","","","","",""
+"66","I4w1azz8aRY7GDyGYJ97fA","Omai Pret-A-Manger",4.5,-73.5685178263,45.5044353147,"Montréal","QC",4,"482 Rue Ste-Catherine W
+Montréal, QC H3B 1A6","","","","","True"
+"67","aX8xuj7PWFGVqyBN06ysQw","Fired Pie",4.5,-112.0705004,33.4478413,"Phoenix","AZ",9,"201 E Washington St
+Ste 111
+Phoenix, AZ 85004","","","","","True"
+"68","dmXfK7G0h8zknsR2dfr1bw","Raising Cane's",3.5,-111.806728,33.379381,"Mesa","AZ",73,"1945 S Stapley Dr
+Mesa, AZ 85204","False","True","False","False","True"
+"69","jX41kyAHjZtIUIrJ59EgJw","Café Code Black",3.5,-73.5794225,45.5169656,"Montréal","QC",19,"4095 Boul Saint-Laurent
+Montréal, QC H2W 1Y7","False","False","False","False","True"
+"70","7tTK3VPlFtBGBHm8-LZIUg","Timo Wine Bar",4,-112.0737503,33.5650982,"Phoenix","AZ",175,"8801 N Central Ave
+Phoenix, AZ 85020","False","False","True","False","True"
+"71","Mog8cxUbSs5DJ-4nGczi_Q","Sun Chinese Dining",3.5,-111.8581737,33.3271818,"Chandler","AZ",33,"1381 N Alma School Rd
+Chandler, AZ 85224","False","True","False","False","True"
+"72","fQJquPvywK87V2NzXVJP2Q","La Palapa",4.5,-79.9805948,40.4535609,"Pittsburgh","PA",3,"Pittsburgh Public Market
+2401 Penn Avenue
+Strip District
+Pittsburgh, PA 15201","","","","","True"
+"73","uECIvsUWlDWSiJ9jAfH_kQ","Texas Roadhouse",3.5,-112.1182099,33.578692,"Phoenix","AZ",81,"10051 N. Metro Parkway East
+Phoenix, AZ 85051","False","False","True","False","True"
+"74","NPp4YxjARblWIf1SZoWdJg","Beetlejuice",3.5,-3.1854458,55.9446907,"Edinburgh","EDH",14,"33 W Nicolson Street
+Newington
+Edinburgh EH8 9DB","False","False","False","False","True"
+"75","vJPehU-xd1p_-L0O7IwTjQ","Little Caesar's Pizza",4.5,-112.1005506,33.6547265,"Phoenix","AZ",3,"1929 W Union Hills Dr
+Phoenix, AZ 85027","","","","",""
+"76","Ok6n1zXuXVgrazcrmC_UKQ","Yu-Yu",4.5,-115.1947749,36.1264024,"Las Vegas","NV",229,"4115 Spring Mountain Rd
+Ste E101
+Chinatown
+Las Vegas, NV 89102","False","False","True","False","True"
+"77","dw6kMj7WSA2ZRk0FqqjqrQ","Boltini Lounge",4,-88.243876,40.117733,"Champaign","IL",70,"211 N Neil St
+Champaign, IL 61820","False","False","False","False","False"
+"78","YKNqAWom7T6zJoTpYQwbgA","Casanova",4,-115.169613361,36.1214362309,"Las Vegas","NV",172,"The Venetian Resort Hotel
+3377 S Las Vegas Blvd, Ste 2170
+The Strip
+Las Vegas, NV 89109","True","False","True","False","True"
+"79","gUk9-MK5q7vzJiV3WZ1mcQ","Five Guys Burgers and Fries",4,-73.7992874,45.486386,"Dollard-des-Ormeaux","QC",11,"3530 Boulevard Des Sources
+Dollard-des-Ormeaux, QC H9B 1Z9","False","False","False","False","True"
+"80","PhwoWS4huKCd-djNDkeZcQ","Sir Veza's Taco Garage",4,-111.898431815,33.3003812482,"Chandler","AZ",24,"Chandler Fashion Center
+3111 W Chandler Blvd
+Chandler, AZ 85226","False","True","False","False","True"
+"81","A2aVN_Yw3xDz4x7gGtmYog","Tacos El Burrito Loco",3.5,-115.1905468,36.1463479,"Las Vegas","NV",8,"2401 S Valley View Blvd
+Westside
+Las Vegas, NV 89102","False","False","False","False","True"
+"82","He9Dar4bk2vyeiPC7TkUgA","Eddie's House",3.5,-111.92898,33.4949521,"Scottsdale","AZ",237,"7042 E Indian School Rd
+Scottsdale, AZ 85250","False","False","True","False","True"
+"83","LXvueihSmsfvlCHkrz8gLw","China Grill",3.5,-115.176436901,36.092268294,"Las Vegas","NV",129,"Mandalay Bay Hotel and Casino
+3950 Las Vegas Blvd S
+The Strip
+Las Vegas, NV 89119","False","False","True","False","False"
+"84","AVUpq52fSE9q3v9tO-i_3g","The Fry Bread House",3.5,-112.060633714,33.4944290412,"Phoenix","AZ",48,"1003 E Indian School Rd
+Phoenix, AZ 85014","False","True","False","False","True"
+"85","wQxIw6IoFCV6wg3l3dJugQ","Fat Willy's Clubhouse Pub & Grill",3.5,-111.649857759,33.4176828798,"Mesa","AZ",8,"650 N Hawes Rd
+Mesa, AZ 85207","False","False","False","False","True"
+"86","JauLZ0TL3D3VIGtSnStzhA","First Food & Bar",3.5,-115.168669224,36.1235594764,"Las Vegas","NV",357,"The Palazzo
+3327 Las Vegas Blvd S
+The Strip
+Las Vegas, NV 89109","False","False","True","False","True"
+"87","vrkhs3YxUPa21YgkfsveOg","Mai Xiang Yuan",4,-73.5607565,45.5083537,"Montréal","QC",208,"1084 Boulevard Saint-Laurent
+Montréal, QC H2Z 1J5","False","True","True","False","True"
+"88","MHt5qfGbk3-eteC7yS4K2Q","Hog's Head Bar and Grill",5,-79.996011,40.482442,"Pittsburgh","PA",8,"3433 Spring Garden Ave
+West View
+Pittsburgh, PA 15212","","","","","True"
+"89","OzjOCoWcu1sz_dpavzOVUw","Super No1 Chinese Restaurant",3.5,-115.1805607,36.2630128,"North Las Vegas","NV",8,"3000 W Ann Rd
+Ste 109
+North Las Vegas, NV 89031","False","False","False","False","True"
+"90","shKCOCGEQctC7N4AvP3nWw","PRESS at Four Seasons",4.5,-115.174061976,36.0903677415,"Las Vegas","NV",16,"3960 Las Vegas Blvd
+The Strip
+Las Vegas, NV 89119","True","False","False","False","True"
+"91","Zdg2UDyqWc2Tn1L9m5z6aQ","Tacos El Nevado",4,-80.763626,35.212722,"Charlotte","NC",11,"4715 Central Ave
+Eastland
+Charlotte, NC 28205","False","True","False","False","True"
+"92","s_cKw6m0Fw9jZbobRH0YSg","Rock Bottom Restaurant & Brewery",2.5,-111.9759674,33.3180465,"Phoenix","AZ",42,"14205 S 50th St
+Phoenix, AZ 85044","False","True","True","False","True"
+"93","vk6VFm10drmhaNHjGJWFeQ","Del Taco",3,-111.751498,33.394149,"Mesa","AZ",12,"3648 E Southern Ave
+Mesa, AZ 85206","False","False","False","False","True"
+"94","FFX46wxMJBmlWdOxgLTdmg","Palazzo Ristorante",3.5,-80.0023696,40.4429302,"Pittsburgh","PA",22,"144 6th St
+Downtown
+Pittsburgh, PA 15222","False","True","True","False",""
+"95","6sNvLW4fVBWEgze71pGDZQ","TGI Friday's",2.5,-115.1809645,36.2919185,"North Las Vegas","NV",86,"7300 Aliante Pkwy
+North Las Vegas, NV 89084","False","False","True","False","True"
+"96","xt73UhzigC8qzbcsOw8CJg","Cee Cee's On The Corner",4,-112.1833135,33.5408597,"Glendale","AZ",11,"7123 N 58th Ave
+Glendale, AZ 85301","False","True","False","False","True"
+"97","CE85IKRDS4GimIaoIp3N5A","Rainbow Club & Casino",4,-114.983609,36.032743,"Henderson","NV",101,"122 S Water St
+Henderson, NV 89015","False","True","False","False","False"
+"98","wYuPafwLYItJAHFVba9mVg","Metro Pizza",3.5,-115.274604778,36.2867051837,"Las Vegas","NV",101,"6720 Sky Pointe Dr
+Centennial
+Las Vegas, NV 89131","False","True","True","False","True"
+"99","LuGSxdxaFnSFadpNV6uxZQ","Avalon",3.5,-111.914198,33.4648293,"Scottsdale","AZ",87,"7707 E McDowell Rd
+Scottsdale, AZ 85257","False","False","True","False","True"
+"100","8dlyEiypNYB0sVfdzQll3A","Tacos Sahuayo",4.5,-112.0131473,33.4738413,"Phoenix","AZ",50,"2320 N 32nd St
+Phoenix, AZ 85008","False","True","False","False","True"
+"101","-6j-KVPPX2xKjCruNO2HnQ","Little Spoon",3,-80.839997,35.174778,"Charlotte","NC",39,"2820 Selwyn Ave
+Myers Park
+Charlotte, NC 28209","False","False","False","False","True"
+"102","NVxVxIejYzTYC0Pykia91A","4&20 Bakery & Cafe",4.5,-89.3570465,43.0982336,"Madison","WI",69,"305 N 4th St
+Emerson East
+Madison, WI 53704","False","False","False","False","True"
+"103","d-O9TFUh8fCNUtXrYXcQ5Q","Laurie Raphaël",3,-73.5743935,45.502552,"Montréal","QC",9,"2050, rue Mansfield
+Montréal, QC H3A 1Y9","False","False","False","False","False"
+"104","ckqbs45ngAwsgyvK_SWkvg","Barro's Pizza",3.5,-111.6837198,33.3880332,"Mesa","AZ",15,"1545 S Power Rd
+Mesa, AZ 85206","False","True","False","False","True"
+"105","2mmxmtwEli9CycpLcVpZgw","Wok Bo Chinese Restaurant",2,-80.937229,35.270702,"Charlotte","NC",7,"527 Little Rock Rd # B
+Paw Creek
+Charlotte, NC 28214","False","False","False","False","True"
+"106","ZXvxDxhNz8XSe59oj2QlZg","Rubio's Fresh Mexican Grill",4,-112.354406,33.6387136,"Surprise","AZ",7,"13736 West Bell Rd
+Surprise, AZ 85374","False","True","True","False","True"
+"107","AtJzxpkKh3VMTqmkHhy0Lw","Hello Bistro",4,-79.9581044,40.4407643,"Pittsburgh","PA",88,"3605 Forbes Ave
+Oakland
+Pittsburgh, PA 15213","False","True","False","False","True"
+"108","d-K2njXXxgA0JJx8SmPt2Q","Wongs",4,-3.2868423,55.9431099,"Edinburgh","EDH",4,"221 Saint John's Road
+Corstorphine
+Edinburgh EH12 7UU","False","False","False","False",""
+"109","iPxUYvC8tgt5rBr-IZlSeg","Luu's Chicken Bowl",4.5,-112.013456468,33.5849779664,"Phoenix","AZ",60,"10876 N 32nd St
+Phoenix, AZ 85028","False","True","False","False","True"
+"110","naUQ_ZHKq2ONBwW5EhJXJQ","Bluephies",3.5,-89.428984,43.056786,"Madison","WI",193,"2701 Monroe St
+Ste 700
+Dudgeon-Monroe
+Madison, WI 53711","False","True","True","False","True"
+"111","VrqEeynr7KqucvEjpz8w_g","Carrabba's",3.5,-111.7435648,33.3014001,"Gilbert","AZ",51,"2709 S. Market St
+Gilbert, AZ 85296","False","False","True","False","True"
+"112","gsEFOpYuE5iRPncVy2hisg","King Crab Oyster Bar & Grill",4,-80.4649691,43.4639487,"Kitchener","ON",7,"907 Victoria Street N
+Kitchener, ON N2B 3C3","","","","",""
+"113","9Tcff8pZht6dQXPfjdReEg","IHOP Restaurant",2.5,-111.8566173,33.3493702,"Chandler","AZ",24,"935 W Elliot Rd
+Chandler, AZ 85225","True","False","False","False","True"
+"114","ysPpFXooSEtwHkIdcOd4Kg","Peter Wong Chinese Restaurant",3,-112.0922595,33.5095738,"Phoenix","AZ",11,"1534 W Camelback Rd
+Phoenix, AZ 85015","False","True","True","False","True"
+"115","NyOUmQCrNeY5S4Z9Iqzmvg","Papa Murphy's Take 'N Bake Pizza",4,-111.8767202,33.3784788,"Mesa","AZ",10,"1955 W Baseline Rd
+Mesa, AZ 85202","False","False","False","True","True"
+"116","7mBZcDYozga63BlmshTKlw","McDonald's",3.5,8.39451,49.0343,"Karlsruhe","BW",3,"Bocksdornweg 2
+76149 Karlsruhe","","","","",""
+"117","flVIZ393lw6RG0wRkTaVEg","bin 702",3.5,-115.13879978,36.1674220639,"Las Vegas","NV",70,"707 E Fremont St
+Downtown
+Las Vegas, NV 89101","False","True","False","False","True"
+"118","sQtXjJvdzfOXtB_TrcZugQ","Tapa",4.5,-3.1975974,55.9543937,"Edinburgh","EDH",9,"97 Hanover Street
+New Town
+Edinburgh EH2 1DJ","False","False","False","False","False"
+"119","YF7SYuFzjlowh5Q63-Xd3A","KFC",2.5,-111.5240392,32.9838521,"Coolidge","AZ",3,"1505 N Arizona Boulevard
+Coolidge, AZ 85228","False","False","False","False","True"
+"120","5h3pG3cq0eNNErp27V6zRg","Thai BBQ",3.5,-115.2243599,36.1129299,"Las Vegas","NV",84,"4180 S Jones Blvd
+Las Vegas, NV 89103","False","True","False","False","True"
+"121","LjxKWM9wmyp7iYDkEMdwGQ","Ciao Ciao Cafe & Bar",3,-115.1766881,36.1174528,"Las Vegas","NV",42,"3500 Las Vegas Blvd S
+The Strip
+Las Vegas, NV 89109","False","False","False","True","True"
+"122","8X_9ue_Hnpr1lYa90EG3bw","Island Style Restaurant",3,-115.241693,36.127459,"Las Vegas","NV",20,"Greenland Market
+6850 Spring Mountain Rd
+Chinatown
+Las Vegas, NV 89146","False","False","False","False","True"
+"123","H9wnP4BIctmRxMq43NPgAA","Talavera",4,-111.850211,33.732072,"Scottsdale","AZ",64,"10600 E Crescent Moon Dr
+Scottsdale, AZ 85262","False","False","True","False","False"
+"124","gDEfkD7ZUXSFWEKC_zb66A","Jt's Barbecue",3,-115.190521181,36.0878030296,"Las Vegas","NV",13,"5611 S Valley View Blvd
+Las Vegas, NV 89118","False","False","False","False","True"
+"125","nVyL22lcEZoUNoAMgfKOyQ","Café Raymond",4,-79.9830149,40.4517538,"Pittsburgh","PA",49,"2103 Penn Ave
+Strip District
+Pittsburgh, PA 15222","True","False","False","False","True"
+"126","u4gTf8OO6ywnnBUp7UL_vA","Ichiban Japanese Restaurant",1.5,-111.915305,33.421053,"Tempe","AZ",5,"1435 E University Dr
+Tempe, AZ 85281","","","","",""
+"127","08-gH0F1IGXDDlCYEpDbMg","Fiddler's Green",4,-73.5751605034,45.496071123,"Montréal","QC",38,"1224 Bishop Street
+Montréal, QC H3G 2E2","False","False","False","True","False"
+"128","sJg0ELnsDeuFUJcVubF98g","Kabuki Dining Bar",4,-115.1378386,36.1162576,"Las Vegas","NV",33,"3949 S Maryland Pkwy
+Eastside
+Las Vegas, NV 89119","False","False","True","False","True"
+"129","HeOhdA_EItjAi_YnvuCdRA","Kasbah Take Away",4,-3.195104,55.9386468,"Edinburgh","EDH",9,"24 Marchmont Road
+Marchmont
+Edinburgh EH9 1HZ","False","False","False","False","True"
+"130","Lkk06qxSgRHH2gDuuB_WkQ","Feast Buffet",2.5,-115.2398152,36.2476774,"Las Vegas","NV",62,"Santa Fe Station Hotel & Casino
+4954 N Rancho Dr
+Northwest
+Las Vegas, NV 89130","False","True","False","False","False"
+"131","exLaqeER1uY9kVfwfFxvKA","Fair Trade Coffee",3.5,-89.392028,43.075046,"Madison","WI",40,"418 State St
+Capitol
+Madison, WI 53703","","","","",""
+"132","iVmVe7VqGAa5D2rQj_dqEg","La Belle Province",3,-73.5366421,45.5457808,"Montreal","QC",10,"3850 Rue St-Catherine E
+Montreal, QC H1W 2G2","False","False","False","False","True"
+"133","QnyzlVMyx0Exri-Lay10cA","Sushi Three",3.5,-80.049448,40.388562,"Pittsburgh","PA",17,"297 Beverly Rd
+Pittsburgh, PA 15216","False","True","True","False","True"
+"134","ygt9aCJ3X8m3M4H8vU7cSw","Pioneer Restaurant",4,-112.1429536,33.8195509,"Phoenix","AZ",4,"3901 W Pioneer Rd
+Phoenix, AZ 85086","False","False","False","False","True"
+"135","JsanjIgKkl_b6kc4qWC55Q","Delhi Palace Cuisine of India",4,-111.9247139,33.4213508,"Tempe","AZ",127,"933 E University Dr
+Ste 103
+Tempe, AZ 85281","False","True","False","False","True"
+"136","SfdwT-pN-pUW4bvziL0Lyw","Eduardo Duluth",3.5,-73.575557498,45.5209654237,"Montréal","QC",35,"404 Duluth Avenue E
+Montréal, QC H2L 1A3","False","False","True","False","True"
+"137","ILtKHOTf_EwrzAesMeNBOw","China Restaurant Long",3.5,8.28568,48.9629,"Rheinstetten","BW",3,"Am Wasen 3
+76287 Rheinstetten","","","","","False"
+"138","gxuVySgACHDqJlwmelFHLA","56th St Deli & Market",4.5,-111.959883,33.488839,"Phoenix","AZ",9,"5619 E Indian School Rd
+Phoenix, AZ 85018","False","False","False","False","True"
+"139","mFcB-ohmJIi1xuZadKbuww","Zaytoon Kabob Bistro",3.5,-111.925763,33.319526,"Chandler","AZ",4,"4929 W Ray Rd
+Chandler, AZ 85226","","","","","True"
+"140","Lt9o2RmacVY2L-IWLA8uTg","Morton's The Steakhouse",4,-80.845006058,35.2286502258,"Charlotte","NC",58,"227 W Trade St
+Charlotte, NC 28202","False","False","True","False","False"
+"141","vcwmvs5yM5Tf9vUy74zEhw","McGinnis Frontrow Restaurant",3.5,-80.5365704,43.471988,"Waterloo","ON",9,"160 University Avenue W
+Waterloo, ON N2L 3E9","False","False","False","False",""
+"142","WJxFcrTCN16QfW16ddE2_g","Kinka Izakaya",4,-73.5788095157,45.4939720356,"Montréal","QC",22,"1624 Rue Sainte-Catherine W
+Montréal, QC H3H 2S7","","","","","True"
+"143","-ypSXxstO11bNUl2Lhf5KQ","Sourdough Cafe",3,-115.075921338,36.1248914538,"Las Vegas","NV",19,"Arizona Charlie's Boulder
+4575 Boulder Hwy
+Las Vegas, NV 89121","True","False","False","False","True"
+"144","EFxaUHb6UwOpsvIIdZk-Ng","China Harvest Buffet",3,-112.1197753,33.597378,"Phoenix","AZ",18,"12407 N 28th Dr
+Phoenix, AZ 85029","False","True","False","False","True"
+"145","oUpVWZv6Sa62wTkkS7V7qQ","Trails End Bar & Grill",3.5,-112.0357137,33.3762931,"Phoenix","AZ",7,"The Legacy Golf Resort
+6808 S 32nd St
+Phoenix, AZ 85042","False","False","False","False","True"
+"146","owBuvSx8tKm62-3gTnparw","Denny's",3,-115.1982229,36.2390184,"North Las Vegas","NV",17,"4289 W Craig Rd
+North Las Vegas, NV 89032","True","False","False","False","True"
+"147","d840tbYJSVn8Fu-n5XRJTw","Handlebar-J",3.5,-111.927518,33.583141,"Scottsdale","AZ",58,"7116 E Becker Ln
+Scottsdale, AZ 85254","False","False","False","False","True"
+"148","0FfB4c7KABDCFITS4rPY_Q","Thai Original BBQ Restaurant",3.5,-115.2411327,36.1151835,"Las Vegas","NV",59,"6820 W Flamingo Rd
+Ste A
+Las Vegas, NV 89103","False","True","False","False","True"
+"149","4ekebF5aRXdIFeHkDggixg","McAlister's Deli",4,-111.978476644,33.602212485,"Phoenix","AZ",48,"12487 N Tatum Blvd
+Phoenix, AZ 85032","False","True","False","False","True"
+"150","xibL5PBnob11lnX8hS6Ihw","Golden Krust",3,-80.7567696,35.3034343,"Charlotte","NC",12,"440 E McCullough Dr
+Ste 126
+University City
+Charlotte, NC 28262","False","True","False","False","True"
+"151","e1fPOv3qzsaFdanxwmcOIQ","The Simple Greek",4.5,-80.0441557914,40.381372311,"Mount Lebanon","PA",9,"665 Washington Rd
+Mount Lebanon, PA 15228","False","False","False","False","True"
+"152","52-myDV9zeS7Q1EmAvF4mg","Carlos & Pepes",3,-73.7450953,45.5624207,"Laval","QC",7,"170 Promenade Du Centropolis
+Laval, QC H7T 2Z6","False","False","False","False","True"
+"153","abyw7M9utpZJGo_RF0LScQ","Streetcar Po-boys",3.5,-115.1632669,36.1520371,"Las Vegas","NV",114,"1624 W Oakey Blvd
+Las Vegas, NV 89102","False","False","False","False","True"
+"154","7_LgHFNEVTqjibY3jIkfZA","Cameron Chinese Seafood Restaurant",3.5,-80.4804697,43.4464381,"Kitchener","ON",17,"21-19 Cameron St
+Kitchener, ON N2G 3N2","False","True","False","False","True"
+"155","HnPMt4Lub6LV9YddPoh1IQ","Lucio Ristorante",4,-115.2796682,36.1439829,"Las Vegas","NV",34,"8615 W Sahara Ave
+Westside
+Las Vegas, NV 89117","False","False","True","False","False"
+"156","tRnSOlzkJd88eMfji2YZOg","Shäika Café",3.5,-73.6125141,45.4722384,"Montréal","QC",17,"5526 Rue Sherbrooke Ouest
+Montréal, QC H4A 1W2","True","True","False","False","True"
+"157","SAn00wMLNfjab3W1XuHACA","Laduca's New York Italian Deli",3.5,-115.227134,36.0999899,"Las Vegas","NV",17,"6160 W Tropicana Ave
+Las Vegas, NV 89103","False","False","False","False","True"
+"158","L7UxfZyS_-jFOxRwG0SZWw","Jimmy John's",3.5,-111.9403088,33.4238154,"Tempe","AZ",87,"680 S Mill Ave
+Tempe, AZ 85281","False","True","False","False","True"
+"159","3trWuWYn8gv3bieAXrBToQ","Panda Express",2.5,-115.2427746,36.0627978,"Las Vegas","NV",14,"6925 S Rainbow Blvd
+Spring Valley
+Las Vegas, NV 89118","False","False","False","False","True"
+"160","zUXC9zZApdSehZVbT7cgYg","Exil Cölner",3,8.4040376,48.9786462,"Karlsruhe","BW",3,"Rastatter Str. 23
+76199 Karlsruhe","","","","","False"
+"161","4ZZab5hinFzHtj3sE8vQWg","Sushi Factory",3,-115.226559,36.101139,"Las Vegas","NV",101,"6120 W Tropicana Ave
+Ste A11
+Las Vegas, NV 89103","False","True","True","False","True"
+"162","HKnOkqBRJtRKeU5h7CEhdQ","Senor Miguel's",2.5,-115.136389,36.175,"Las Vegas","NV",6,"Suncoast Casino
+9090 Alta Dr
+Las Vegas, NV 89136","False","False","False","False",""
+"163","AEpzpeo3Y6ihEa_yqzp8lg","Chez Delmo",4.5,-73.5576858,45.5037224,"Montréal","QC",14,"275 Rue Notre-Dame O
+Montréal, QC H2Y 1T6","False","False","False","False","False"
+"164","_aqNCt2RzYu8Qkj0z6A9cw","Palm Pizza",2.5,-115.10086,36.1585279,"Las Vegas","NV",12,"3411 E Charleston Blvd
+Downtown
+Las Vegas, NV 89104","False","False","False","False","True"
+"165","jYQnZdB15ATLbQNXV3Kokg","Subway",4,-112.0493144,33.436794,"Phoenix","AZ",4,"1515 E Buckeye Rd
+Phoenix, AZ 85034","False","False","False","False","True"
+"166","nkmzy0CAwViaKdYIgoz3jA","Round Table Pizza",4,-115.114895,36.028096,"Las Vegas","NV",12,"8878 S Eastern Ave
+Ste 104
+Las Vegas, NV 89123","False","True","True","False","True"
+"167","NHEniyWfAtopHd-NMURLWQ","Restaurant Soya",4,-73.7469163,45.5573438,"Laval","QC",5,"3204 Boul Saint-Martin O
+Laval, QC H7T 1A1","","","","",""
+"168","obd-z3P4N5WOwXVvAKtL9Q","McKibbin's Irish Pub",3.5,-73.5711534,45.5134103,"Montréal","QC",24,"3515, rue Saint-Laurent
+Montréal, QC H2X 2T6","False","False","False","False","True"
+"169","MOYCtEubbPD0Medsqvrk7g","Le Ambre",1.5,-73.6150017,45.4772435,"Montréal","QC",3,"3857 Boul Décarie
+Montréal, QC H4A 3J6","","","","",""
+"170","we3Hz1tUWFssx3YKNpsegQ","Restaurant Nilufar",4,-73.5808664,45.4926251,"Montreal","QC",11,"1923 Rue Sainte-Catherine Ouest
+Montreal, QC H3H 1M3","False","True","False","False","True"
+"171","Uke8Pq1m918WW0n0_jEmWw","Market Bistro",3.5,-111.941177845,33.6252063329,"Scottsdale","AZ",57,"6501 E Greenway Pkwy
+Ste 123
+Scottsdale, AZ 85254","False","True","False","False","True"
+"172","A5ECBI0p_9mZ46Y5J3cjsg","Electric Earth Cafe",3.5,-89.3921447,43.0690926,"Madison","WI",31,"546 W Washington Ave
+Capitol
+Madison, WI 53703","True","False","False","False","True"
+"173","fVOxPX70sxVApYJQr5G05Q","New Asia Fast Food",3,-80.5265216,43.4842604,"Waterloo","ON",6,"402 King Street N
+Waterloo, ON N2J 2Z4","False","False","False","False","True"
+"174","EDIhEegxgXva7jWoJzL1FA","The Great Pho King Food Truck",3,-111.910516,33.468848,"Phoenix","AZ",21,"Phoenix, AZ 85257","False","True","False","False","True"
+"175","5nddZwZzT7pvC5vBjKRzoA","Chick-Fil-A",4,-111.743376861,33.3043718899,"Gilbert","AZ",52,"2533 S Market St
+Gilbert, AZ 85296","False","True","False","False","True"
+"176","V9mkm2Y2U_vgbGq1ZjSd8A","Cafe Keno",3.5,-3.186636,55.949632,"Edinburgh","EDH",7,"80 High Street
+The Royal Mile
+Newington
+Edinburgh EH1 1TB","False","False","False","False",""
+"177","qKBdXH1kZNU-c9BHQaTUag","Dottie's True Blue Cafe",3.5,-111.92881012,33.496181488,"Scottsdale","AZ",55,"4151 N Marshall Way
+Scottsdale, AZ 85251","True","False","False","False","True"
+"178","93zReBgrXHZxsONq6JtEzQ","Tasty Island Carribean Food & Deli",3.5,-115.2410939,36.114987,"Las Vegas","NV",48,"6820 W Flamingo Rd
+Las Vegas, NV 89103","False","True","True","False","True"
+"179","4Cb0o2AU9PWN_7ZCfwYyLg","Bocata",4.5,-73.55588,45.501442,"Montréal","QC",49,"310 Rue St Paul O
+Montréal, QC H2Y 2A3","False","False","True","False","False"
+"180","fNrQg2ORp4zj5gC75dwlWg","KELLY O's Diner",3.5,-79.9814381,40.4540482,"Pittsburgh","PA",43,"2400 Smallman St
+Strip District
+Pittsburgh, PA 15222","True","False","False","False","True"
+"181","kFmud3f8H8GSO8eeHDNfrA","Table 34",4,-115.1494487,36.0574506,"Las Vegas","NV",106,"600 E Warm Springs Rd
+Southeast
+Las Vegas, NV 89119","False","False","True","False","True"
+"182","UaqG2RIaDRj1A4ZHZYn1_w","Jack-In-the-Box",4.5,-80.843388,35.34807,"Charlotte","NC",8,"7000 W Wt Harris Blvd
+Charlotte, NC 28269","False","True","False","False","True"
+"183","glDy-a_H8hEuUwKp7-RUcQ","Cucina Tagliani",3,-112.340311,33.46722,"Avondale","AZ",3,"1733 N Dysart Rd
+Avondale, AZ 85392","False","False","False","False","True"
+"184","ouBlOm6OSfVKWatic4c2lg","Sandra Dee's Catering,LLC",4.5,-111.7497,33.3604,"Phoenix","AZ",8,"344 N Gilbert Rd
+Phoenix, AZ 85234","False","False","False","False","True"
+"185","hAO3Y7JukpLRVQzbGO_jEw","Carl's Jr",2.5,-115.151185,36.085488,"Las Vegas","NV",3,"McCarran International Airport Terminal 3
+Southeast
+Las Vegas, NV 89122","False","False","False","False","True"
+"186","6S8fuDZ2XDcsPibF3BNTsQ","Krung Thai Restaurant",4,-115.207626,36.1145349,"Las Vegas","NV",92,"4130 S Decatur Blvd
+Las Vegas, NV 89103","False","True","False","False","True"
+"187","OdNwrZgfPp2Xkj8lEPMJeg","Greystone Restaurant Tap Room",3,-80.868984,35.19747,"Charlotte","NC",23,"3039 South Blvd
+Sedgefield
+Charlotte, NC 28209","True","False","False","False","True"
+"188","l6QcUE8XXLrVH6Ydm4GSNw","Fatburger",3,-115.191711,36.197365,"Las Vegas","NV",13,"Texas Station Casino
+2101 Texas Star Ln
+Las Vegas, NV 89032","False","True","True","False","True"
+"189","uUNTNwbyDO7WK8ZgCxHxzw","Villa Fresh Italian Kitchen",2.5,-115.146372,36.124423,"Las Vegas","NV",5,"Fashion Outlets of Las Vegas
+32100 Las Vegas Blvd. South
+Eastside
+Las Vegas, NV 89109","False","False","False","False","True"
+"190","qXyhCYV6cjojzy5rJKooMA","Luncha Libre Gourmet Food Truck",4.5,-112.0533611,33.5527972,"Phoenix","AZ",56,"1339 E Northern
+Phoenix, AZ 85020","False","True","False","False","True"
+"191","zoHCkEiIKfXiLTKUqKEojQ","Red Robin Gourmet Burgers",3,-111.8993914,33.3057982,"Chandler","AZ",53,"3420 W. Chandler Blvd.
+Chandler, AZ 85226","False","True","False","False","True"
+"192","w-RzHsvV05yT2K-JC8DJUA","Fernando's Cafe",3.5,-79.9957164,40.4436254,"Pittsburgh","PA",12,"963 Liberty Ave
+Downtown
+Pittsburgh, PA 15222","False","False","False","False","True"
+"193","WjYJlmKwdYsNEcrJ6D0C_A","K Peppers",3.5,-89.513737,43.096359,"Middleton","WI",63,"1901 Cayuga St
+Ste 110
+Middleton, WI 53562","False","True","True","False","True"
+"194","5YUGde1hTOu19Jq9anqLMA","Moe's Southwest Grill",3.5,-80.8560299501,35.3488949069,"Charlotte","NC",14,"9330 Center Lake Dr
+Ste 100
+Charlotte, NC 28263","False","False","True","False","True"
+"195","UvuUOiP0oIgJ2H_8J6h6Zg","Wing Zone",2,-80.74022,35.3171014,"Charlotte","NC",7,"9605 N Tryon Street
+University City
+Charlotte, NC 28262","False","False","False","False","True"
+"196","DnnFh6Gn8dV6I20Hzy8a0g","Hidalgo Mexican Food",3,-111.813858,33.407534,"Mesa","AZ",4,"801 E Broadway
+Mesa, AZ 85204","","","","",""
+"197","F8ZmVRwRU2QmoIXeBd5jPA","Esposito's Pizzera",3,-80.7028745,35.0692931,"Indian Trail","NC",10,"1381 Chestnut Ln
+Indian Trail, NC 28104","","","","",""
+"198","PAtgWCLCFRQd_fjnihISOg","L'amore",4,-112.0154818,33.5305094,"Phoenix","AZ",57,"3159 E Lincoln Dr
+Phoenix, AZ 85016","False","False","True","False","True"
+"199","Nq_BMV7kyx9_C3w0Jip6CA","Greyfriars Bobby's Bar",3.5,-3.1915004,55.9468452,"Edinburgh","EDH",46,"30-34 Candlemaker Row
+Old Town
+Edinburgh EH1 2QE","False","False","False","False","False"
+"200","4eFIVmbeCvJGCrhzmd-VYA","Grinders Coffee Company",4,-112.0731019,33.5675286,"Phoenix","AZ",64,"17 E Dunlap Ave
+Ste 2
+Phoenix, AZ 85020","True","False","False","False","True"
