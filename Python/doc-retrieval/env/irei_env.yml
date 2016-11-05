@@ -1,0 +1,20 @@
+name: irei
+dependencies:
+- gensim=0.12.2=np110py27_0
+- libgfortran=1.0=0
+- mkl=11.3.1=0
+- nltk=3.1=py27_0
+- numpy=1.10.4=py27_0
+- openssl=1.0.2f=0
+- pip=8.0.2=py27_0
+- python=2.7.11=0
+- pyyaml=3.11=py27_1
+- readline=6.2=2
+- scipy=0.17.0=np110py27_1
+- setuptools=20.1.1=py27_0
+- six=1.10.0=py27_0
+- sqlite=3.9.2=0
+- tk=8.5.18=0
+- wheel=0.29.0=py27_0
+- yaml=0.1.6=0
+- zlib=1.2.8=0

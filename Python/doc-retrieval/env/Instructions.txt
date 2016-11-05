@@ -1,0 +1,30 @@
+Instructions that must be followed to create a python environment
+with all dependencies needed to execute the retrieval system:
+
+1. Install Anaconda:
+	Follow official instructions: http://docs.continuum.io/anaconda/install
+
+2. Download ieri_env.yml to a local directory
+
+3. Open a terminal/cmd and move to the same directory where you placed ieri_env.yml
+
+4. Create the environment with the following command:
+	conda env create -f irei_env.yml
+
+5. Activate environment with the following command:
+	Linux, OS X: source activate irei
+	Windows: activate irei
+
+6. Install the "corpora/stopwords" data from nltk:
+	6.1 Run python:
+		python
+	6.2 Run next code:
+		import nltk
+		nltk.download("stopwords")
+
+
+
+Notes:
+	- The environment uses python 2.7, so python 3.x syntax won't be supported.
+	- Find more information on how to manage python environments with Anaconda here:
+		http://conda.pydata.org/docs/using/envs.html
